@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THAT'S ME</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      height:100% ;
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(63, 61, 61) 78.9%
+      );
+      /* background-repeat: no-repeat; */
+      background-size: cover;
+    }
+    nav ul li:last-child {
+      margin-right: 34px;
+    }
+    nav ul li:first-child {
+      margin-left: 58px;
+      font-size: 1.8vw;
+    }
+    nav ul li:first-child:hover {
+      font-size: 2vw;
+    }
+    .container h1 {
+      margin-left: 1vw;
+      font-size: 2.3vw;
+      border: 2px solid black;
+      border-radius: 4px;
+
+      padding-top: 1px;
+      padding-right: 1px;
+      padding-left: 12px;
+      text-shadow: 2px rgba(255, 255, 255, 0.418);
+      padding-right: 3px;
+      margin-top: 0vh;
+      position: absolute;
+      transition: 0.5s ease-in-out 0s;
+    }
+    .container h1:hover {
+      border: 5px solid black;
+
+      border-radius: 10px;
+      border-color: white;
+    }
+
+    nav {
+      margin-right: 5vw;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      margin-top: 4vh;
+
+      justify-content: right;
+    }
+    .container {
+      height: 7vh;
+      font-family: "Oswald", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 0.9vw;
+      font-weight: 700;
+      color: white;
+    }
+    nav ul li {
+      font-size: 1.7rem;
+      cursor: pointer;
+      letter-spacing: 1.7px;
+      margin-left: 3vw;
+      display: inline-block;
+      font-weight: bold;
+
+      transition: 0.3s ease-in 0.1s;
+    }
+    nav ul li:hover {
+      font-size: 1.3vw;
+      color: gray;
+    }
+
+    nav ul {
+      float: right;
+    }
+    .heading-1 {
+      align-items: center;
+      width: 98%;
+      margin-left: 0.7vw;
+      text-align: center;
+      margin-top: 20vh;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-weight: bolder;
+    }
+    .heading-1 h1 {
+      letter-spacing: 2vw;
+
+      font-size: 5.1vw;
+      cursor: pointer;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-image: url(txt.jpg);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: animate 30s alternate infinite;
+      transition: 0.4s ease-out 0s;
+      animation-timing-function: linear;
+      -webkit-text-stroke: rgb(3, 3, 3) 1px;
+      font-weight: bolder;
+    }
+    @keyframes animate {
+      from {
+        background-position: 0% 80%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+    .heading-1 h2 {
+      border-style: none;
+      background-color: #4e4e4e7c;
+      backdrop-filter: blur(90px);
+      border-radius: 10px;
+      box-shadow: 20px 20px 40px rgba(255, 255, 255, 0.555);
+
+      width: 79vw;
+      padding-left: 30px;
+      margin-left: 8vw;
+      letter-spacing: 1.8vw;
+      font-size: 5vw;
+      -webkit-text-stroke: 3px #52d6f4;
+      color: transparent;
+      font-weight: bolder;
+    }
+    .heading-1 h2 span {
+      line-height: 90px;
+      background-image: url(txt.jpg);
+      background-size: 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: animate 30s alternate infinite;
+      transition: 0.4s ease-out 0s;
+      animation-timing-function: linear;
+      -webkit-text-stroke: rgb(3, 3, 3) 1px;
+      color: transparent;
+      -webkit-text-stroke: 0px white;
+      font-weight: bolder;
+    }
+    .timeheading {
+      margin-top: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #faf6f0;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 1vw;
+      font-size: 2.3vw;
+    }
+
+    .timeline-section {
+      min-height: 100vh;
+      padding: 100px 15px;
+    }
+    .timeline-items {
+      max-width: 1000px;
+      font-family: "Roboto", sans-serif;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .timeline-items::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: #f4dfc8;
+      left: calc(50% - 1px);
+    }
+    .timeline-item {
+      margin-bottom: 40px;
+      width: 100%;
+      position: relative;
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-item:nth-child(odd) {
+      padding-right: calc(50% + 30px);
+      text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+      padding-left: calc(50% + 30px);
+    }
+    .timeline-dot {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.596);
+      height: 20px;
+      width: 20px;
+      background-color: #eaa023;
+      position: absolute;
+      left: calc(50% - 8px);
+      border-radius: 50%;
+      top: 10px;
+    }
+    .timeline-date {
+      font-size: 18px;
+      color: #eaa023;
+      margin: 6px 0 15px;
+    }
+    .timeline-content {
+      backdrop-filter: blur(80px);
+      -webkit-box-shadow: 0px 0px 51px 2px #faf6f0;
+      -moz-box-shadow: 0px 0px 51px 2px #faf6f0;
+      box-shadow: 0px 0px 51px 2px #faf6f0;
+      background-color: #faf6f0;
+      padding: 30px;
+      border-radius: 30px;
+    }
+    .timeline-content h3 {
+      font-size: 25px;
+      color: black;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+      margin: 0 0 10px;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .timeline-content p {
+      font-family: "Roboto", sans-serif;
+      color: black;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .icon {
+      display: none;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+      border-radius: 30px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(
+        109.6deg,
+        rgba(31, 31, 31, 0.93) 11.2%,
+        rgb(63, 61, 61) 78.9%
+      );
+
+      border-radius: 40px;
+      border: 2px solid black;
+    }
+    .main-lay-head {
+      margin-top: 20vh;
+      margin-bottom: 20vh;
+      align-items: center;
+      text-align: center;
+    }
+    .main-lay-head h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 7rem;
+      font-weight: bolder;
+      color: #f4dfc8;
+      -webkit-text-stroke: 2px black;
+      text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.37);
+    }
+    .mainphoto {
+      height: 65vh;
+      width: 24vw;
+      margin-left: 2vw;
+      border-radius: 100px;
+      backdrop-filter: blur(90px);
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.354) 11.2%,
+        rgba(63, 61, 61, 0.43) 78.9%
+      );
+      box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.419);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mainphoto img {
+      background-size: cover;
+      border-radius: 150px;
+      height: 64vh;
+      width: 22vw;
+      mix-blend-mode: color-dodge;
+    }
+    .mainlayout {
+      display: flex;
+    }
+    .stats1 {
+      cursor: url("cur.png"), auto;
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.354) 11.2%,
+        rgba(63, 61, 61, 0.43) 78.9%
+      );
+
+      margin-left: 5vw;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      width: 30vw;
+      border-radius: 20px;
+      backdrop-filter: blur(90px);
+
+      box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.419);
+    }
+    .stats1 img {
+      box-shadow: 2px 2px 10px white;
+      height: 28vh;
+      margin-left: 2vw;
+      margin-top: 1vh;
+      width: 25vw;
+      position: absolute;
+      border-radius: 20px;
+      z-index: 9;
+      transition: 0.3s ease-in 0s;
+    }
+    .stats1 img:hover {
+      margin-left: 0vw;
+      margin-top: 0vh;
+
+      height: 30vh;
+
+      width: 70vw;
+      box-shadow: inset 10px 10px black;
+    }
+    .stats1 button {
+      cursor: pointer;
+      margin-top: 25vh;
+      margin-left: 13vw;
+      color: white;
+      background-color: rgba(3, 3, 3, 0.523);
+      padding: 6px 12px;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      border-style: none;
+      box-shadow: 4px 4px 10px rgb(51, 51, 51);
+      width: 10vw;
+      position: absolute;
+      z-index: 10;
+    }
+    .stats2 {
+      cursor: url("cur.png"), auto;
+
+      margin-left: 5vw;
+      height: 30vh;
+      width: 30vw;
+      backdrop-filter: blur(90px);
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.354) 11.2%,
+        rgba(63, 61, 61, 0.43) 78.9%
+      );
+      box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.419);
+
+      border-radius: 20px;
+    }
+    .stats2 img {
+      box-shadow: 2px 2px 10px white;
+      height: 28vh;
+      margin-left: 2vw;
+      margin-top: 1vh;
+      width: 25vw;
+      position: absolute;
+      border-radius: 20px;
+      z-index: 9;
+      transition: 0.3s ease-in 0s;
+    }
+    .stats2 img:hover {
+      margin-left: 0vw;
+      margin-top: 0vh;
+
+      height: 30vh;
+
+      width: 70vw;
+      box-shadow: inset 10px 10px black;
+    }
+    .stats2 button {
+      cursor: pointer;
+      margin-top: 25vh;
+      margin-left: 13vw;
+      color: white;
+      background-color: rgba(3, 3, 3, 0.523);
+      padding: 6px 12px;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      border-style: none;
+      box-shadow: 4px 4px 10px rgb(51, 51, 51);
+      width: 10vw;
+      position: absolute;
+      z-index: 10;
+    }
+    .stats3 {
+      cursor: url("cur.png"), auto;
+
+      margin-top: 35vh;
+      position: absolute;
+      border-radius: 20px;
+      backdrop-filter: blur(90px);
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.354) 11.2%,
+        rgba(63, 61, 61, 0.43) 78.9%
+      );
+      box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.419);
+      margin-left: 31vw;
+      height: 30vh;
+      width: 30vw;
+    }
+    .stats3 img {
+      box-shadow: 2px 2px 10px white;
+      height: 28vh;
+      margin-left: 2vw;
+      margin-top: 1vh;
+      width: 25vw;
+      position: absolute;
+      border-radius: 20px;
+      z-index: 9;
+      transition: 0.3s ease-in 0s;
+    }
+    .stats3 img:hover {
+      margin-left: 0vw;
+      margin-top: 0vh;
+
+      height: 30vh;
+
+      width: 70vw;
+      box-shadow: inset 10px 10px black;
+    }
+    .stats3 button {
+      cursor: pointer;
+      margin-top: 25vh;
+      margin-left: 13vw;
+      color: white;
+      background-color: rgba(3, 3, 3, 0.523);
+      padding: 6px 12px;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      border-style: none;
+      box-shadow: 4px 4px 10px rgb(51, 51, 51);
+      width: 10vw;
+      position: absolute;
+      z-index: 10;
+    }
+    .stats4 {
+      cursor: url("cur.png"), auto;
+
+      margin-top: 35vh;
+      position: absolute;
+      border-radius: 20px;
+      backdrop-filter: blur(90px);
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.354) 11.2%,
+        rgba(63, 61, 61, 0.43) 78.9%
+      );
+      box-shadow: 4px 4px 30px rgba(255, 255, 255, 0.419);
+      margin-left: 66vw;
+      height: 30vh;
+      width: 30vw;
+    }
+    .stats4 img {
+      box-shadow: 2px 2px 10px white;
+      height: 28vh;
+      margin-left: 2vw;
+      margin-top: 1vh;
+      width: 25vw;
+      position: absolute;
+      border-radius: 20px;
+      z-index: 9;
+      transition: 0.3s ease-in 0s;
+    }
+    .stats4 img:hover {
+      margin-left: 0vw;
+      margin-top: 0vh;
+
+      height: 30vh;
+
+      width: 70vw;
+      box-shadow: inset 10px 10px black;
+    }
+    .stats4 button {
+      cursor: pointer;
+      margin-top: 25vh;
+      margin-left: 13vw;
+      color: white;
+      background-color: rgba(3, 3, 3, 0.523);
+      padding: 6px 12px;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      border-radius: 10px;
+      border-style: none;
+      box-shadow: 4px 4px 10px rgb(51, 51, 51);
+      width: 10vw;
+      position: absolute;
+      z-index: 10;
+    }
+
+    @media (max-width: 1025px) {
+      .main-lay-head h1 {
+        font-size: 5rem;
+        line-height: 140px;
+      }
+      .main-lay-head {
+        align-items: center;
+        text-align: center;
+      }
+      .stats1 img {
+        width: 65vw;
+
+        position: absolute;
+      }
+      .stats1 {
+        width: 70vw;
+        margin-top: 10vh;
+        position: absolute;
+        margin-left: 15vw;
+      }
+      .stats1 button {
+        width: 40vw;
+      }
+      .stats2 img {
+        width: 65vw;
+
+        position: absolute;
+      }
+      .stats2 {
+        width: 70vw;
+        margin-top: 50vh;
+        position: absolute;
+        margin-left: 15vw;
+      }
+      .stats2 button {
+        width: 40vw;
+      }
+      .stats3 img {
+        width: 65vw;
+
+        position: absolute;
+      }
+      .stats3 {
+        width: 70vw;
+        margin-top: 90vh;
+        position: absolute;
+        margin-left: 15vw;
+      }
+      .stats3 button {
+        width: 40vw;
+      }
+      .stats4 img {
+        width: 65vw;
+
+        position: absolute;
+      }
+      .stats4 {
+        width: 70vw;
+        margin-top: 130vh;
+        position: absolute;
+        margin-left: 15vw;
+      }
+      .stats4 button {
+        width: 40vw;
+      }
+      .mainlayout {
+        height: 200vh;
+        display: inline;
+      }
+      .mainphoto img {
+        height: 45vh;
+        width: 66vw;
+      }
+      .mainphoto {
+        display: inline-block;
+        height: 45vh;
+        margin-left: 15vw;
+        width: 66vw;
+      }
+      .mainlayout {
+        background: linear-gradient(
+          109.6deg,
+          rgba(0, 0, 0, 0.93) 11.2%,
+          rgb(63, 61, 61) 78.9%
+        );
+      }
+      .icon {
+        display: inline-block;
+        padding: 0;
+        margin-top: -20vh;
+      }
+      .timeline-items::before {
+        left: 7px;
+      }
+      .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+      }
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        padding-left: 37px;
+      }
+      .timeline-dot {
+        left: 0;
+      }
+      .heading-1 h2 {
+        font-size: 5.1vw;
+        -webkit-text-stroke: 1px #52d6f4;
+        padding-top: -80px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.555);
+        background-color: transparent;
+        margin-left: 5vw;
+        margin-top: -2vh;
+        margin-bottom: 5vh;
+
+        height: 9vh;
+      }
+      .heading-1 h1 {
+        font-size: 10vw;
+        font-weight: bolder;
+      }
+      .container h1 {
+        font-size: 7vw;
+      }
+      nav ul li {
+        display: none;
+      }
+      .timeheading {
+        font-size: 3.6vw;
+        margin-top: 18vh;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>AHMED</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>My Projects</li>
+          <li>Contact Me</li>
+          <li class="icon">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+              src="https://cdn.lordicon.com/ipnwkgdy.json"
+              trigger="hover"
+              colors="primary:#ffffff"
+              style="width: 50px; height: 50px"
+            >
+            </lord-icon>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="heading-1">
+      <h1>IT'S MY PORTFOLIO</h1>
+      <h2>IT'S ME <span>AHMED SAEED</span></h2>
+      <h1>IT'S MY PORTFOLIO</h1>
+    </div>
+    <div class="timeheading">
+      <h1>THATS MY JOURNEY!</h1>
+    </div>
+    <section class="timeline-section">
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2015</div>
+          <div class="timeline-content">
+            <img
+              src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png"
+              alt=""
+              height="50"
+            />
+            <h3>HTML5</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2016</div>
+          <div class="timeline-content">
+            <img
+              src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/icons-png/icon-tailwind.png"
+              alt=""
+              height="60"
+            />
+
+            <h3>TAILWIND CSS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017</div>
+          <div class="timeline-content">
+            <img
+              src="https://www.freepnglogos.com/uploads/javascript-png/javascript-icon-js-code-logo-javascript-png-logo-download-9.png"
+              alt=""
+              height="50"
+            />
+            <h3>JAVASCRIPT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018</div>
+          <div class="timeline-content">
+            <img
+              src="https://vectorified.com/images/icon-react-native-24.png"
+              alt=""
+              height="50"
+            />
+            <h3>REACT JS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-content">
+            <img
+              src="https://www.pngkey.com/png/full/383-3838923_open-mongodb-icon.png"
+              alt=""
+              height="50"
+            />
+            <h3>MONGO DB</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <img
+              src="https://icon-library.com/images/database-png-icon/database-png-icon-22.jpg"
+              alt=""
+              height="50"
+            />
+            <h3>DATA BASE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-1024.png"
+              alt=""
+              height="50"
+            />
+            <h3>PYTHON</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main-lay-head">
+      <h1>THATS MY STATS</h1>
+    </div>
+    <div class="mainlayout">
+      <div class="mainphoto">
+        <img
+          src="https://purepng.com/public/uploads/large/businessman-1aq.png"
+          alt=""
+        />
+      </div>
+      <div class="stats1">
+        <button>
+          Visit The Site
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/pbbsmkso.json"
+            trigger="hover"
+            style="width: 20px; height: 20px"
+          >
+          </lord-icon>
+        </button>
+        <img
+          src="https://daqiantimes.com/wp-content/uploads/2019/01/1d0900d02be609bbb740f68665465725df80e950-960x640.jpg"
+          alt=""
+        />
+      </div>
+      <div class="stats2">
+        <button>
+          Visit The Site
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/pbbsmkso.json"
+            trigger="hover"
+            style="width: 20px; height: 20px"
+          >
+          </lord-icon>
+        </button>
+        <img
+          src="https://uicookies.com/wp-content/uploads/2018/03/prantokon-free-landing-page-templates.jpg"
+          alt=""
+        />
+      </div>
+      <div class="stats3">
+        <button>
+          Visit The Site
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/pbbsmkso.json"
+            trigger="hover"
+            style="width: 20px; height: 20px"
+          >
+          </lord-icon>
+        </button>
+        <img
+          src="https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-landing-page-wordpress-site-template.jpg"
+          alt=""
+        />
+      </div>
+      <div class="stats4">
+        <button>
+          Visit The Site
+          <script src="https://cdn.lordicon.com/lordicon.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/pbbsmkso.json"
+            trigger="hover"
+            style="width: 20px; height: 20px"
+          >
+          </lord-icon>
+        </button>
+        <img
+          src="https://s3-alpha.figma.com/hub/file/959767187/d56b751f-1bda-43a2-adef-ce9f173a21b3-cover.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
