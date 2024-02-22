@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <style>
+    body {
+      -webkit-animation: color-change-2x 2s linear infinite alternate both;
+      animation: color-change-2x 2s linear infinite alternate both;
+      height: 100%;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    @-webkit-keyframes color-change-2x {
+      0% {
+        background: #19dcea;
+      }
+      100% {
+        background: #b22cff;
+      }
+    }
+    @keyframes color-change-2x {
+      0% {
+        background: #19dcea;
+      }
+      100% {
+        background: #b22cff;
+      }
+    }
+
+    .form h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      font-size: 40px;
+      -webkit-animation: tracking-in-expand 0.7s
+        cubic-bezier(0.215, 0.61, 0.355, 1) 2s infinite forwards;
+      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 2s
+        infinite forwards;
+    }
+    @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    h2 {
+      font-size: 100px;
+      text-align: center;
+      margin-top: 10px;
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+      -webkit-text-stroke: 2px black;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      margin-bottom: -10vh;
+      -webkit-animation: text-flicker-in-glow 4s linear infinite both;
+      animation: text-flicker-in-glow 4s linear infinite both;
+    }
+    @-webkit-keyframes text-flicker-in-glow {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      10.1% {
+        opacity: 1;
+        text-shadow: none;
+      }
+      10.2% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      20% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+      }
+      20.6% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      30% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      30.6% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      45% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      55.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      57% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35);
+      }
+      60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35);
+      }
+      60.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      65% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      75.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      77% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      85.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      86% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+          0 0 60px rgba(255, 255, 255, 0.45),
+          0 0 110px rgba(255, 255, 255, 0.25),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+          0 0 60px rgba(255, 255, 255, 0.45),
+          0 0 110px rgba(255, 255, 255, 0.25),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+    }
+    @keyframes text-flicker-in-glow {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 0;
+        text-shadow: b;
+      }
+      10.1% {
+        opacity: 1;
+        text-shadow: none;
+      }
+      10.2% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      20% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(3, 3, 3, 0.541);
+      }
+      20.6% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      30% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(7, 7, 7, 0.548),
+          0 0 60px rgba(2, 2, 2, 0.548);
+      }
+      30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.548),
+          0 0 60px rgba(26, 25, 25, 0.514);
+      }
+      30.6% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      45% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45),
+          0 0 60px rgba(255, 255, 255, 0.25);
+      }
+      55.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      57% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35);
+      }
+      60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35);
+      }
+      60.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      65% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      75.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      77% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55),
+          0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      85.1% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      86% {
+        opacity: 0;
+        text-shadow: none;
+      }
+      86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+          0 0 60px rgba(255, 255, 255, 0.45),
+          0 0 110px rgba(255, 255, 255, 0.25),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+      100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+          0 0 60px rgba(255, 255, 255, 0.45),
+          0 0 110px rgba(255, 255, 255, 0.25),
+          0 0 100px rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .form {
+      margin-left: 35vw;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 90px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+      margin-top: 20%;
+    }
+    .name input {
+      background-color: rgba(255, 255, 255, 0.329);
+      margin-right: 2.5vw;
+      padding: 12px 15px;
+      border-style: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.562);
+    }
+    .e-mail input {
+      background-color: rgba(255, 255, 255, 0.363);
+
+      width: 22vw;
+      margin-top: 1vh;
+      padding: 12px 15px;
+      border-style: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.568);
+    }
+    .num input {
+      background-color: rgba(255, 255, 255, 0.363);
+
+      width: 22vw;
+      margin-top: 1vh;
+      padding: 12px 15px;
+      border-style: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.582);
+    }
+    .msg input {
+      background-color: rgba(255, 255, 255, 0.473);
+
+      width: 22vw;
+      margin-top: 1vh;
+      padding: 9px 15px;
+      border-style: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.568);
+      height: 10vh;
+    }
+    input::placeholder {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: black;
+      padding: 3px 5px;
+    }
+    .submit {
+      text-align: center;
+    }
+    .submit button {
+      cursor: pointer;
+      width: 13vw;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bolder;
+      padding: 10px 20px;
+      margin-left: -2vw;
+      border-radius: 20px;
+      border-style: none;
+      box-shadow: 5px 5px 20px rgba(255, 255, 0, 0.479);
+    }
+  </style>
+  <body>
+    <h2>AHMED SAEED</h2>
+    <div class="form">
+      <h1>Contact Me!</h1>
+      <ul class="name">
+        <input type="name" placeholder="Name" />
+        <input type="name" placeholder=" Second Name" />
+      </ul>
+      <ul class="e-mail">
+        <input type="email" placeholder="E-Mail" />
+      </ul>
+      <ul class="num">
+        <input type="number" placeholder="phone number" />
+      </ul>
+      <ul class="msg">
+        <input type="text" placeholder="Message" />
+      </ul>
+      <ul class="submit">
+        <button>Submit</button>
+      </ul>
+    </div>
+  </body>
+</html>
